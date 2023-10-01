@@ -10,7 +10,7 @@ reload(getmodule(IO))
 
 def saveFile(*args):
     if not builder : return
-    fileManager.saveJson(builder.getState())
+    fileManager.saveJson(builder.get_state())
 
 def build(*args):
     builder.cleanup()
